@@ -1,13 +1,19 @@
 {
   "name": "PCPI Retro Minimals",
-  "version": "0.0.5",
-  "releaseDate": "2026-09-04",
-  "downloadUrl": "https://github.com/chuyo31/releases/releases/download/pcpi-retro-v0.0.5/PCPI-Retro-Minimals-Setup-0.0.5.exe",
-  "sha256": "364f43a1c532675fdc7ae7ec6d0b034b0375124f4c686a09c44ba3a9b5b54da7",
-  "requirements": "Windows 10 / 11 (64-bit) · ejecutar como administrador",
-  "notes": "0.0.5: arreglo de instalaciones que fallaban. winget se lanza con --disable-interactivity y --no-upgrade (si el programa ya esta, se marca YA INSTALADO en vez de fallar); esto elimina el error -1978335215 (hash del instalador) al reinstalar Chrome/Firefox y similares. El log muestra ahora las lineas reales de winget y traduce los codigos de error comunes. Codigo fuente: https://github.com/chuyo31/pcpi-retro-minimals",
+  "version": "0.0.6",
+  "releaseDate": "2026-11-07",
+  "downloadUrl": "https://github.com/chuyo31/releases/releases/download/pcpi-retro-v0.0.6/PCPI-Retro-Minimals-Setup-0.0.6.exe",
+  "sha256": "0919bd39eb597f8a4e0f8903ba96782e2a9f01d1139869bba0f64574181b6832",
+  "requirements": "Windows 10 / 11 (64-bit) · se ejecuta como administrador automaticamente",
+  "notes": "0.0.6: ejecucion forzada como administrador (app.manifest) para evitar fallos silenciosos de instalacion (codigo 0x8A15000A) en PCs sin elevacion. Comprobacion previa de que winget responde antes de lanzar la cola de instalacion: si falta o esta desactualizado 'Instalador de aplicaciones' (App Installer), se avisa con un mensaje claro en vez de un fallo por cada programa seleccionado. Anadidos al catalogo: Avira Free Security, ESET NOD32 Antivirus, ShareX, Greenshot, Minecraft Launcher, Amazon Games y LINE. Codigo fuente: https://github.com/chuyo31/pcpi-retro-minimals",
   "hasPortable": true,
   "previousReleases": [
+    {
+      "version": "0.0.5",
+      "releaseDate": "2026-09-04",
+      "downloadUrl": "https://github.com/chuyo31/releases/releases/download/pcpi-retro-v0.0.5/PCPI-Retro-Minimals-Setup-0.0.5.exe",
+      "sha256": "364f43a1c532675fdc7ae7ec6d0b034b0375124f4c686a09c44ba3a9b5b54da7"
+    },
     {
       "version": "0.0.4",
       "releaseDate": "2026-08-30",
@@ -15,6 +21,6 @@
       "sha256": "cf86fac54b34c34fd333132c2d1a864035b51b3db27418dd8c3c81f5fd394c1b"
     }
   ],
-  "portableDownloadUrl": "https://github.com/chuyo31/releases/releases/download/pcpi-retro-v0.0.5/PCPI-Retro-Minimals-Portable-0.0.5.exe",
-  "portableSha256": "364f43a1c532675fdc7ae7ec6d0b034b0375124f4c686a09c44ba3a9b5b54da7"
+  "portableDownloadUrl": "https://github.com/chuyo31/releases/releases/download/pcpi-retro-v0.0.6/PCPI-Retro-Minimals-Portable-0.0.6.exe",
+  "portableSha256": "0919bd39eb597f8a4e0f8903ba96782e2a9f01d1139869bba0f64574181b6832"
 }
